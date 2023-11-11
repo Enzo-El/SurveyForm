@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!---Lorenzo Laurel Reyes--->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />		
+
+		<title>Survey Form</title>
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1><b>A Simple Survey Form</b></h1>
+				<p id="description" class="description text-center">
+					<b>Thank you for taking a short time to take this survey</b>
+				</p>
+			</header>
+
+			<form id="survey-form">
+				<div class="elements">
+					<label id="name-label" for="name">
+						<b>Complete Name:</b>
+					</label>
+					<input type="text" name="name" id="name" class="form-boxes" placeholder="Please enter your COMPLETE NAME" required />
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<label id="email-label" for="email">
+						<b>Email Address:</b>
+					</label>
+					<input type="email" name="email" id="email" class="form-boxes" placeholder="Please enter your EMAIL ADDRESS" required />
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<label id="number-label" for="age">
+						<b>Age:</b>
+					</label>
+					<input type="number" name="age" id="age" class="form-boxes" min="18" max="100" placeholder="Please enter your AGE" required/>
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<p>What is your current JOB STATUS?</p>
+					
+					<select id="dropdown" name="role" class="form-boxes" required>
+						<option disabled selected value>Select current role</option>
+						<option value="student">Student</option>
+						<option value="job">Full-Time Job</option>
+						<option value="learner">Part-Time Job</option>
+						<option value="preferNo">Underemployed</option>
+						<option value="other">Unemployed</option>
+					</select>
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<p>What is your Gender?</p>
+
+					<label>
+						<input name="gender" value="Male" type="radio" class="gender-radio" checked />Male
+					</label>
+					<label>
+						<input name="gender" value="Female" type="radio" class="gender-radio" />Female
+					</label>
+					<label>
+						<input name="gender" value="Not-Sure" type="radio" class="gender-radio" />Not Sure
+					</label>
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<p>What is your favorite Social Media?</p>
+
+					<select id="most-like" name="social-media" class="form-boxes" required>
+						<option value="FaceBook">FaceBook</option>
+						<option value="Messenger">Messenger</option>
+						<option value="Instagram">Instagram</option>
+						<option value="Telegram">Telegram</option>
+						<option value="Others">Others</option>
+					</select>
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<p>Which sector do you belong?</p>
+
+					<label for="lower-class">
+						<input id="lower-class" name="lower-class" class="status-class" value="lower-class" type="checkbox" />
+						 Lower Class
+					</label>
+					<label for="middle-class">
+						<input id="middle-class" name="middle-class" value="middle-class" type="checkbox" />
+						 Middle Class
+					</label>
+					<label for="upper-class">
+						<input id="upper-class" name="upper-class" value="upper-class" type="checkbox" />
+						 Upper Class
+					</label>
+				</div>
+
+				<br />
+
+				<div class="elements">
+					<p>Feedbacks or Suggestions?</p>
+					<textarea rows="10" cols="6" class="feedback" name="feedback" placeholder="Please enter your feedback/suggestions here..."></textarea>
+				</div>
+
+				<br />
+				
+				<button type="submit" id="submit">
+					Submit
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
